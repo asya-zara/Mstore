@@ -1,0 +1,166 @@
+.product {
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.product-item {
+    position: relative;
+    padding-bottom: 30px;
+    text-align: center;
+
+    @media(min-width: 768px) {
+        text-align: left;
+    }
+}
+
+.product-item__img {
+    position: relative;
+}
+
+
+.product-item__img:hover .product-item__img__hover {
+    display: block;
+
+
+}
+
+.product-item__img__hover {
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    height: 40px;
+    z-index: 1;
+    background-color: #fff;
+    bottom: 35px;
+    overflow: hidden;
+    transition: 0.5s ease-out;
+
+    a {
+        padding-right: 25px;
+        font-size: 14px;
+        color: #31353d;
+
+        &:active,
+        &:hover,
+        &:focus {
+            color: #FF0000;
+            text-decoration: none;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+    @media(min-width: 1200px) {
+        a {
+            font-size: 18px;
+            padding-right: 40px;
+        }
+
+    }
+
+}
+
+.product-item__all {
+    float: right;
+    padding-top: 8px;
+    font-weight: 300;
+    font-size: 11px;
+    color: #8d8d8d;
+    text-transform: uppercase;
+}
+
+
+.product-item__details {
+    display: flex;
+    justify-content: center;
+
+    @media(min-width: 768px) {
+        justify-content: space-between;
+    }
+}
+
+
+.product-item__title {
+    padding-top: 17px;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+
+}
+
+
+.product-item__price {
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.product-item__price--old {
+    margin-top: 4px;
+    margin-left: 10px;
+    color: #a8a8a8;
+    text-decoration: line-through;
+    
+    @media(min-width: 768px) {
+        display: none;
+        margin-left: 0;
+    }
+
+    @media(min-width: 1200px) {
+        margin-left: 0;
+        display: block;
+        margin-top: 3px;
+        margin-left: -50px;
+    }
+}
+
+.container-fluid {
+    padding: 0;
+    padding-left: 15px;
+}
+
+.product-item__assignment {
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0;
+    width: 50px;
+    height: 20px;
+    background-color: gray;
+    transform: rotate(90deg) translate(0, -100%);
+    transform-origin: 0 0;
+    text-transform: uppercase;
+    font-size: 11px;
+    text-align: center;
+    padding-top: 3px;
+
+}
+
+.product-item__assignment--sale,
+.product-item__assignment--hot,
+.product-item__assignment--new {
+    @media(min-width: 768px) {
+        left: 0px;
+    }
+}
+
+.product-item__assignment--sale {
+    background-color: #ed1c24;
+    color: #fff;
+
+}
+
+.product-item__assignment--hot {
+    background-color: #ffff00;
+    color: #ff4400;
+
+}
+
+.product-item__assignment--new {
+    background-color: #00c8c8;
+    color: #fff;
+}

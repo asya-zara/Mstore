@@ -1,0 +1,76 @@
+.card {
+    margin-bottom: 60px;
+}
+
+.card-left {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    width: 100%;
+    height: 400px;
+    background-color: #96dbc9;
+    text-align: center;
+}
+
+.card-right {
+    width: 100%;
+    height: 400px;
+    top: 0;
+    right: 0;
+    background-image: url(../img/bg/bg-mstore.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.card-left__title {
+    margin: 0;
+    font-size: 29px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.4;
+
+    &:after {
+        display: block;
+        border-bottom: 1px solid #414142;
+        content: '';
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        bottom: -0.8em;
+        width: 49px;
+
+    }
+
+    @media(min-width: 768px) {
+        font-size: 20px;
+    }
+
+    @media(min-width: 1200px) {
+        font-size: 29px;
+    }
+}
+
+.card-left__slogan {
+    padding-left: 87px;
+    padding-right: 70px;
+    margin-top: 22px;
+    font-size: 14px;
+    font-weight: 300;
+
+    @media(min-width: 768px) {
+        padding-left: 47px;
+        padding-right: 47px;
+        font-size: 12px;
+        line-height: 33px;
+    }
+
+    @media(min-width: 1200px) {
+        margin-top: 22px;
+        padding-left: 87px;
+        padding-right: 70px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 36px;
+    }
+}

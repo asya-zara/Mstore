@@ -1,0 +1,122 @@
+.arrivals {
+    font-family: 'Open Sans';
+}
+
+.arrivals-text_boy,
+.arrivals-text_girl {
+    padding-top: 70px;
+    padding-bottom: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.arrivals-text_boy {
+    background-image: url(../img/product/boy.jpg);
+    padding-right: 0;
+    text-align: center;
+
+    @media(min-width: 768px) {
+        padding-right: 20px;
+        text-align: right;
+    }
+
+}
+
+.arrivals-text_girl {
+    background-image: url(../img/product/girl.jpg);
+    padding-left: 0;
+    text-align: center;
+
+    @media(min-width: 768px) {
+        padding-left: 20px;
+        text-align: left;
+     }
+}
+
+.arrivals-text__title,
+.arrivals-text__slogan,
+.arrivals-text__price-girl,
+.arrivals-text__price {
+    text-transform: uppercase;
+}
+
+.arrivals-text__title,
+.arrivals-text__price-girl,
+.arrivals-text__price {
+    font-weight: bold;
+}
+
+.arrivals-text__slogan,
+.arrivals-text__price-girl,
+.arrivals-text__price {
+    font-size: 30px;
+}
+
+.arrivals-text__title {
+    font-size: 14px;
+    color: @pink;
+    letter-spacing: 1.35px;
+
+}
+
+.arrivals-text__title-girl,
+.arrivals-text__price-girl {
+    color: @blueB;
+
+}
+
+.arrivals-text__slogan {
+    font-weight: 800;
+    line-height: 0.5;
+    letter-spacing: -1.3px;
+    color: #00FF00;
+
+    @media(min-width: 768px) {
+        color: #000;
+    }
+}
+
+.arrivals-text__price {
+    color: @pink;
+    line-height: 2.3;
+
+    @media(min-width: 768px) {
+        font-size: 26px;
+    }
+
+}
+
+.arrivals-text__content {
+    display: none;
+    margin-top: -1px;
+    margin-right: auto;
+    width: 210px;
+    color: #636363;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.25;
+    letter-spacing: 0.9px;
+
+    p {
+        margin: 0;
+    }
+
+    @media(min-width: 768px) {
+        display: block;
+        margin-left: auto;
+        margin-right: -3px;
+    }
+}
+
+.arrivals-text_girl__content {
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media(min-width: 768px) {
+        margin: 0;
+        margin-right: auto;
+
+    }
+}

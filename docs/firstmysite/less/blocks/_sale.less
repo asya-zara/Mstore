@@ -1,0 +1,101 @@
+#blink1 {
+    -webkit-animation: blink1 3s linear infinite;
+    animation: blink1 3s linear infinite;
+}
+
+#blink2 {
+    -webkit-animation: blink2 3s linear infinite;
+    animation: blink2 3s linear infinite;
+}
+
+@-webkit-keyframes blink1 {
+    0% {
+        color: @sale;
+    }
+
+    50% {
+        color: rgba(34, 34, 34, 0);
+    }
+
+    100% {
+        color: @sale;
+    }
+}
+
+@keyframes blink2 {
+    0% {
+        color: #76dbdb;
+    }
+
+    50% {
+        color: rgba(34, 34, 34, 0);
+    }
+
+    100% {
+        color: #76dbdb;
+    }
+}
+
+
+.sale__product {
+    position: relative;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+
+    @media(min-width: 768px) {
+        margin-top: -25px;
+        text-align: right;
+    }
+
+    @media(min-width: 1200px) {
+        padding-left: 7px;
+
+    }
+}
+
+.sale__slogan {
+    position: absolute;
+    top: 0px;
+    left: 48%;
+    font-family: 'Ubuntu Condensed';
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 30px;
+
+    @media(min-width: 768px) {
+        top: -20px;
+        left: 60px;
+        text-align: right;
+    }
+
+    @media(min-width: 1200px) {
+        top: -20px;
+        left: 70px;
+    }
+}
+
+.sale__slogan p {
+    font-family: 'Ubuntu Condensed';
+    font-size: 20px;
+    line-height: 55px;
+    text-transform: uppercase;
+
+    @media(min-width: 1200px) {
+        font-size: 30px;
+    }
+}
+
+.sale {
+    display: block;
+}
+
+.sale__slogan a {
+    font-family: 'Roboto';
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 12px;
+    color: #000;
+}

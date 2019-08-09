@@ -1,0 +1,21 @@
+.section__heading {
+    margin: 0;
+    float: left;
+    line-height: 1;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+
+    &:after {
+        content: '';
+        display: block;
+        position: relative;
+        width: 49px;
+        border-bottom: 1px solid #414142;
+        bottom: -0.3em;
+    }
+
+    @media(min-width: 1200px) {
+        font-size: 25px;
+    }
+}
